@@ -4,7 +4,7 @@ ASSUNTO: FrontenSomativa, segurança 12.08
 
 # isabela romão: responsavel pelo figma e o codigo.
 # iasmin: responsavel pelo figma e o codigo.
-# gleice: responsavel pela docmentação.
+# gleice: responsavel pela documentação.
 # ana clara: responsavel pelo video.
 
 -Este documento tem como objetivo apresentar os principais conceitos de segurança.
