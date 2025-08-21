@@ -1,0 +1,132 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #002D62; // cor desejada
+}
+
+.container {
+  height: 650px;
+  width: 580px;
+  padding: 2rem;
+  background-color: #002D62;
+  border-radius: 30px;
+  border: 3px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; // centraliza horizontalmente
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 5.9rem;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0rem 2rem 2rem 2rem; // padding-top menor
+
+    @media (max-width: 800px) {
+      font-size: 0.9rem;
+    }
+  }
+
+  input {
+    width: 90%;
+    height: 4rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 5rem;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+  }
+
+  .input-icon {
+    position: relative;
+    width: 90%;
+
+
+    i {
+      position: absolute;
+      left: 20px;
+      top: 32.2%;
+      transform: translateY(-40%);
+      color: #002D62;
+      font-size: 1.8rem;
+      pointer-events: none;
+    }
+
+    input {
+      width: 100%;
+      height: 4rem;
+      font-size: 1.5rem;
+      padding: 0.5rem 1rem 0.8rem 3.5rem; // espaço para o ícone à esquerda
+      border-radius: 50px;
+      border: 1px solid #f4f4f4;
+      box-sizing: border-box;
+      color: #002D62;
+    }
+  }
+
+  .btn-login {
+    width: 45%;
+    height: 4rem;
+    border-radius: 50px;
+    border: 2px solid #f4f4f4;
+    font-size: 2.4rem;
+    padding: 0rem 1rem 0.8rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  h1 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+
+    .last-word {
+      color: black;
+      cursor: pointer;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 4.5rem;
+
+    i {
+      font-size: 2.5rem;
+      color: white;
+      background: #002D62;
+      border-radius: 50%;
+      padding: 0.7rem;
+      transition: background 0.2s, color 0.2s;
+      cursor: pointer;
+    }
+
+    i.fa-google {
+      color: #002D62;
+      background: #fff;
+    }
+
+    i.fa-github {
+      color: #002D62;
+      background: #fff;
+    }
+
+    i.fa-linkedin {
+      color: #002D62;
+      background: #fff;
+    }
+
+    i:hover {
+      background: #f4f4f4;
+    }
+  }
+}

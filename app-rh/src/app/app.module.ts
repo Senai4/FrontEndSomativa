@@ -15,6 +15,7 @@ import { CurriculoFormComponent } from './views/curriculo-form/curriculo-form.co
 import { LoginComponent } from './pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { InternaComponent } from './pages/interna/interna.component';
+import { CadastroComponent } from './views/cadastro/cadastro.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { InternaComponent } from './pages/interna/interna.component';
     CurriculoFormComponent,
     LoginComponent,
     RegistroComponent,
-    InternaComponent
+    InternaComponent,
+    CadastroComponent
 
   ],
   imports: [
