@@ -6,9 +6,11 @@ import { CurriculosComponent } from './views/curriculos/curriculos.component';
 import { PainelVagasComponent } from './views/painel-vagas/painel-vagas.component';
 import { CurriculoFormComponent } from './views/curriculo-form/curriculo-form.component';
 import { CadastroComponent } from './views/cadastro/cadastro.component';
+import { LoginComponent } from './views/login/login.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'login', component: LoginComponent},
   { path: 'vagas', component: VagasComponent },
   { path: 'curriculos', component: CurriculosComponent },
   { path: 'curriculos/novo', component: CurriculoFormComponent }, // rota para criar currículo

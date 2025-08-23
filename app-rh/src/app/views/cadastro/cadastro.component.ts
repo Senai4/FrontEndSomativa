@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro',
   templateUrl: './cadastro.component.html',
-  styleUrls: ['./cadastro.component.scss']
+  styleUrls: ['./cadastro.component.scss'],
 })
 export class CadastroComponent {
-irParaCadastro() {
-throw new Error('Method not implemented.');
-}
-irParaVagas() {
-throw new Error('Method not implemented.');
-}
 
+constructor(private router: Router) {}
+
+  irParaLogin() {
+    this.router.navigate(['/login']);
+  }
 }

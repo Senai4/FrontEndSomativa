@@ -24,7 +24,7 @@ export class AuthService {
     );
   }
 
-  login(credenciais:any):Observable<boolean>{
+  login(credenciais: any, senha: any):Observable<boolean>{
     return this.http.get<any[]>(
       `${this.apiUrl}?email=${credenciais.email}&senha=${credenciais.senha}`).pipe(
         map(usuarios =>{

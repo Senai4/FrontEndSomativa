@@ -10,12 +10,9 @@ import { CurriculosComponent } from './views/curriculos/curriculos.component';
 import { HomeComponent } from './views/home/home.component';
 import { PainelVagasComponent } from './views/painel-vagas/painel-vagas.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CurriculoFormComponent } from './views/curriculo-form/curriculo-form.component';
-import { LoginComponent } from './pages/login/login.component';
-import { RegistroComponent } from './pages/registro/registro.component';
-import { InternaComponent } from './pages/interna/interna.component';
-import { CadastroComponent } from './views/cadastro/cadastro.component';
+import { LoginComponent } from './views/login/login.component';
 
 
 @NgModule({
@@ -29,18 +26,15 @@ import { CadastroComponent } from './views/cadastro/cadastro.component';
     PainelVagasComponent,
     CurriculoFormComponent,
     LoginComponent,
-    RegistroComponent,
-    InternaComponent,
-    CadastroComponent
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule, // módulo necessário para que a página faça as requisições HttpClient
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
