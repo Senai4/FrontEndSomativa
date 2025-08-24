@@ -17,7 +17,7 @@ isHomePage: any;
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         // Adicione todas as rotas que NÃO devem mostrar header/footer
-        this.esconderHeaderFooter = ['/login', '/cadastro'].includes(
+        this.esconderHeaderFooter = ['/login', '/cadastro', '/vagas'].includes(
           event.urlAfterRedirects
         );
       }
