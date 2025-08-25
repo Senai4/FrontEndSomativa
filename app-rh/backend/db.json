@@ -38,5 +38,21 @@
       "habilidades": "JavaScript, React, Node.js",
       "linkedin": "https://linkedin.com/in/usuario"
     }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "admin@exemplo.com",
+      "senha": "admin123",
+      "perfil": "admin",
+      "nome": "ADM"
+    },
+    {
+      "id": 2,
+      "email": "usuario@exemplo.com",
+      "senha": "usuario123",
+      "perfil": "usuario",
+      "nome": "Iasmin"
+    }
   ]
 }

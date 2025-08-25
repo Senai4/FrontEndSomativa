@@ -1,14 +1,14 @@
 <div class="container">
   <p>Login</p>
   <div class="input-icon">
-  <input type="email" placeholder="Email">
-  <i class="fa fa-user"></i>
+    <input type="email" placeholder="Email" [(ngModel)]="credenciais.email" name="email">
+    <i class="fa fa-user"></i>
   </div>
   <div class="input-icon">
-  <input type="password" placeholder="Senha">
-  <i class="fa fa-lock"></i>
+    <input type="password" placeholder="Senha" [(ngModel)]="credenciais.senha" name="senha">
+    <i class="fa fa-lock"></i>
   </div>
-  <button (click)="irParaVagas()">Login</button>
+  <button (click)="fazerLogin()" type="submit">Login</button>
   <h1>Ainda não possui conta <a href="/cadastro">Cadastre-se</a></h1>
   <div class="icons">
     <i class="fab fa-google"></i>
